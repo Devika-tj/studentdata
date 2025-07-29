@@ -11,7 +11,7 @@ const navbar=[{link:"/basic",name:'Home'},
 ]
 
 
-const basicroutes=require('navbar/basicroutes')(navbar);
+const basicroutes=require('navbar/basicRoute')(navbar);
 app.use('/basic',basicroutes);
 app.listen(port,()=>{
     console.log(`server is running at ${port} `)
